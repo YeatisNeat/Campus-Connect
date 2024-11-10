@@ -4,6 +4,8 @@ import GLOBE from '../assets/globe.png'
 import QUESTOIN from '../assets/question.png'
 import ILLUSTRATION from '../assets/illustration.png'
 
+import Login from './Login'
+
 const LandingPage = () => {
     return (
         <>
@@ -21,6 +23,7 @@ const LandingPage = () => {
             <div className="main-content">
                 <div className="grid-container">
                     <img className='illustration' src={ILLUSTRATION}></img>
+                    <Login />
                 </div>
             </div>
         </>
