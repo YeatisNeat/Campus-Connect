@@ -28,7 +28,7 @@ h2 {
 .input-email, .input-password{
     display: grid;
     grid-template-columns: 1fr 8fr;
-    transform: translateY(50px);
+    margin-top: 70px;
     margin-left: 34px;
     margin-bottom: 22px;
     width: 452px;
@@ -37,9 +37,11 @@ h2 {
     border-width: 0px;
     background: #F3F4F6FF;
     opacity: 1;
+    box-sizing: border-box;
 }
 
 .input-password {
+    margin-top: 22px;
     grid-template-columns: 1fr 8fr 1fr;
 }
 
@@ -63,4 +65,85 @@ h2 {
     border-radius: 12px;
     border-width: 0px;
     opacity: 1;
+}
+
+.utility-container {
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+    padding-right: 30px;
+    width: 452px;
+    height: 20px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    margin-left: 35px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.utility-container input {
+    appearance: none;    
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #636AE8FF;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked { /*Need to fix this part*/
+    background-image: url('../assets/check.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    background-color: #636AE8FF;
+}
+
+.utility-container p, a{
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400px;
+    color: #171A1FFF;
+    margin: 0px;
+    margin-left: 3px;
+}
+
+.left {
+    display: flex;
+}
+
+button {
+    font-family: Inter;
+    font-size: 16px;
+    width: 450px;
+    height: 44px;
+    margin-left: 36px;
+    margin-bottom: 100px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background: #636AE8FF;
+    box-sizing: border-box;
+}
+
+.sign-up-prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-prompt p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400px;
+    margin: 0px;
+}
+
+.sign-up-prompt a {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700px;
+    margin: 0px;
+    margin-left: 2px;
+    color: #636AE8FF;
 }

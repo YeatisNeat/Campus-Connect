@@ -29,6 +29,23 @@ const Login = () => {
                     </input>
                     <img src={EYE} alt='eye.png'></img>
                 </div>
+
+                <div className='utility-container'>
+                    <div className="left">
+                        <input type='checkbox'></input>
+                        <p>Remember me</p>
+                    </div>
+                    <div className="right">
+                        <u><a>Forgot Password?</a></u>
+                    </div>
+                </div>
+
+                <button>Continue</button>
+
+                <div className="sign-up-prompt">
+                    <p>Don't have an account?</p>
+                    <b><a>Sign up</a></b>
+                </div>
                 
             </form>
         </>
